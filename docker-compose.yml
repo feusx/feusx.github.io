@@ -1,7 +1,10 @@
 services:
   webserver:
-  image: nginx:latest
-  ports:
-  -80:80
-  -443:443
+    image: nginx:latest
+    ports:
+    -80:80
+    -443:443
+  certbot:
+    image: certbot/certbot:latest
+  wordpress: fpm-alpine
   
